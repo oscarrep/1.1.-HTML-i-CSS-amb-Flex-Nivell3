@@ -110,6 +110,7 @@
 
 /* TABLET VERSION */
 @media only screen and (max-width: 768px) {
+
     .header,
     .footer{
         display: block;
@@ -153,6 +154,56 @@
     .navegacion {
         margin: 3%;
         width: 91%;
+    }
+
+}
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 600px) {
+
+    .boxBlueGrey {
+        display: block;
+    }
+
+    .logoSocial,
+    .nav {
+        width: 94%;
+    }
+
+    .nav {
+        margin: 2%;
+    }
+
+    .articlePubli {
+        display: inline-block;
+    }
+
+    .articleContainer,
+    .publiContainer {
+        width: 94%;
+    }
+
+    .articleContainer{
+        display: block;
+    }
+
+    .publi {
+        margin-bottom: 0%;
+        margin: 3%;
+        width: 95%;
+    }
+
+    .boxGrey,
+    .boxRed {
+        width: 92%;
+        padding: 1%;
+        margin: 3%;
+    }
+
+    .article,
+    .navegacion {
+        margin: 2%;
+        width: 98%;
     }
 
 }
