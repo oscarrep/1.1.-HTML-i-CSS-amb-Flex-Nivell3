@@ -1,4 +1,5 @@
 /* DESKTOP VERSION */
+
 body {
     background-color: rgb(208, 124, 216);
 }
@@ -10,7 +11,7 @@ body {
 .header,
 .footer,
 .articlePubli {
-    background: rgb(10, 10, 10);
+    background-color: rgb(10, 10, 10);
     margin-bottom: 3%;
     display: grid;
 }
@@ -39,37 +40,33 @@ body {
 }
 
 .boxBlueGrey {
-    background: rgb(72, 90, 128);
+    background-color: rgb(72, 90, 128);
     display: flex;
 }
 
 .boxOrange {
-    background: rgb(247, 120, 47);
+    background-color: rgb(247, 120, 47);
     padding: 2%;
 }
 
 .boxRed {
-    background: rgb(185, 52, 52);
+    background-color: rgb(185, 52, 52);
     width: 35%;
     margin: 3%;
 }
 
 .boxGrey {
-    background: rgb(88, 97, 116);
+    background-color: rgb(88, 97, 116);
     display: block;
     width: 65%;
     margin: 3%;
 }
 
-.logoSocial,
+.logo,
+.social,
 .nav {
-    background: tomato;
+    background-color: tomato;
     padding: 1%;
-}
-
-.logoSocial {
-    margin: 2%;
-    width: 20%;
 }
 
 .nav {
@@ -78,34 +75,50 @@ body {
     width: 60%;
 }
 
+.logo,
+.social {
+    margin: 2%;
+    width: 20%;
+}
+
+.logo {
+    cursor: pointer;
+    transition: transform 1s, background-color 1s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    background-color: deeppink;
+}
+
 .pie {
-    background: rgb(255, 234, 141);
+    background-color: rgb(255, 234, 141);
     padding: 1%;
     margin: 2%;
 }
 
 .publi {
-    background: rgb(255, 230, 0);
+    background-color: rgb(255, 230, 0);
     padding: 3%;
     margin: 6%;
 }
 
 .banner {
-    background: rgb(247, 184, 47);
+    background-color: rgb(247, 184, 47);
     padding: 2%;
     font-size: 30px;
     font-weight: bold;
 }
 
 .article {
-    background: rgb(78, 124, 223);
+    background-color: rgb(78, 124, 223);
     padding: 2%;
     margin: 3%;
     width: 50%;
 }
 
 .navegacion {
-    background: rgb(155, 184, 247);
+    background-color: rgb(155, 184, 247);
     padding: 2%;
     margin: 3%;
     width: 100%;
@@ -119,11 +132,11 @@ body {
     }
 
     .header,
-    .footer{
+    .footer {
         display: block;
     }
 
-    .articlePubli{
+    .articlePubli {
         display: inline-block;
     }
 
@@ -132,7 +145,8 @@ body {
         padding: 1%;
     }
 
-    .logoSocial,
+    .logo,
+    .social,
     .nav {
         width: 94%;
     }
@@ -176,7 +190,8 @@ body {
         display: block;
     }
 
-    .logoSocial,
+    .logo,
+    .social,
     .nav {
         width: 94%;
     }
@@ -194,7 +209,7 @@ body {
         width: 94%;
     }
 
-    .articleContainer{
+    .articleContainer {
         display: block;
     }
 
