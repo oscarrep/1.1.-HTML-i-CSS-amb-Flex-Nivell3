@@ -2,9 +2,6 @@
 
 body {
     background-color: rgb(208, 124, 216);
-}
-
-.back {
     max-width: 1200px;
 }
 
@@ -13,12 +10,13 @@ body {
 .articlePubli {
     background-color: rgb(10, 10, 10);
     margin-bottom: 3%;
-    display: grid;
+    display: flex;
 }
 
 .header,
 .footer {
     padding: 1%;
+    flex-direction: column;
 }
 
 .articleContainer {
@@ -26,40 +24,53 @@ body {
 }
 
 .publiContainer {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .articlePubli {
-    width: 100%;
     display: flex;
 }
 
 .boxBlueGrey,
 .boxOrange {
-    margin: 2%;
+    margin: 2% auto;
 }
 
 .boxBlueGrey {
     background-color: rgb(72, 90, 128);
     display: flex;
+    width: 95%;
 }
 
 .boxOrange {
     background-color: rgb(247, 120, 47);
-    padding: 2%;
+    width: 95%;
+}
+
+.banner {
+    background-color: rgb(247, 184, 47);
+    width: 96%;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 2% auto;
+    pad: 1%;
 }
 
 .boxRed {
     background-color: rgb(185, 52, 52);
-    width: 35%;
-    margin: 3%;
+    width: 30%;
+    margin: 3% auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .boxGrey {
     background-color: rgb(88, 97, 116);
-    display: block;
-    width: 65%;
-    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 3% auto;
 }
 
 .logo,
@@ -87,27 +98,22 @@ body {
 }
 
 .logo:hover {
-    transform: scale(1.05);
+    transform: scale(1.15);
     background-color: deeppink;
 }
 
 .pie {
     background-color: rgb(255, 234, 141);
     padding: 1%;
-    margin: 2%;
+    margin: 2% auto;
+    width: 95%;
 }
 
 .publi {
     background-color: rgb(255, 230, 0);
     padding: 3%;
-    margin: 6%;
-}
-
-.banner {
-    background-color: rgb(247, 184, 47);
-    padding: 2%;
-    font-size: 30px;
-    font-weight: bold;
+    margin: 6% auto;
+    width: 85%;
 }
 
 .article {
@@ -133,15 +139,16 @@ body {
 
     .header,
     .footer {
-        display: block;
+        display: flex;
     }
 
     .articlePubli {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
     }
 
     .boxBlueGrey {
-        display: block;
+        display: flex;
         padding: 1%;
     }
 
@@ -162,13 +169,23 @@ body {
         margin: 3%;
     }
 
+    .boxOrange {
+        width: 97%;
+    }
+
+    .banner {
+        padding: 1%;
+        margin: 3% auto;
+    }
+
     .publiContainer {
-        display: block;
+        display: flex;
     }
 
     .publi {
         margin-bottom: 0%;
         margin: 3%;
+        width: 88%;
     }
 
     .article,
@@ -187,7 +204,11 @@ body {
     }
 
     .boxBlueGrey {
-        display: block;
+        display: flex;
+    }
+
+    .boxOrange {
+        width: 97%;
     }
 
     .logo,
@@ -201,7 +222,7 @@ body {
     }
 
     .articlePubli {
-        display: inline-block;
+        display: flex;
     }
 
     .articleContainer,
@@ -210,26 +231,29 @@ body {
     }
 
     .articleContainer {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     .publi {
-        margin-bottom: 0%;
-        margin: 3%;
+        margin: 3% auto auto auto auto;
         width: 95%;
     }
 
     .boxGrey,
     .boxRed {
         width: 92%;
-        padding: 1%;
-        margin: 3%;
     }
 
     .article,
     .navegacion {
         margin: 2%;
         width: 98%;
+    }
+
+    .banner {
+        width: 93%;
+        padding: 1%;
     }
 
 }
