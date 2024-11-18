@@ -1,23 +1,22 @@
 /* DESKTOP VERSION */
+
 body {
     background-color: rgb(208, 124, 216);
-}
-
-.back {
     max-width: 1200px;
 }
 
 .header,
 .footer,
 .articlePubli {
-    background: rgb(10, 10, 10);
+    background-color: rgb(10, 10, 10);
     margin-bottom: 3%;
-    display: grid;
+    display: flex;
 }
 
 .header,
 .footer {
     padding: 1%;
+    flex-direction: column;
 }
 
 .articleContainer {
@@ -25,51 +24,60 @@ body {
 }
 
 .publiContainer {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .articlePubli {
-    width: 100%;
     display: flex;
 }
 
 .boxBlueGrey,
 .boxOrange {
-    margin: 2%;
+    margin: 2% auto;
 }
 
 .boxBlueGrey {
-    background: rgb(72, 90, 128);
+    background-color: rgb(72, 90, 128);
     display: flex;
+    width: 95%;
 }
 
 .boxOrange {
-    background: rgb(247, 120, 47);
-    padding: 2%;
+    background-color: rgb(247, 120, 47);
+    width: 95%;
+}
+
+.banner {
+    background-color: rgb(247, 184, 47);
+    width: 96%;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 2% auto;
+    pad: 1%;
 }
 
 .boxRed {
-    background: rgb(185, 52, 52);
-    width: 35%;
-    margin: 3%;
+    background-color: rgb(185, 52, 52);
+    width: 30%;
+    margin: 3% auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .boxGrey {
-    background: rgb(88, 97, 116);
-    display: block;
-    width: 65%;
-    margin: 3%;
+    background-color: rgb(88, 97, 116);
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 3% auto;
 }
 
-.logoSocial,
+.logo,
+.social,
 .nav {
-    background: tomato;
+    background-color: tomato;
     padding: 1%;
-}
-
-.logoSocial {
-    margin: 2%;
-    width: 20%;
 }
 
 .nav {
@@ -78,34 +86,45 @@ body {
     width: 60%;
 }
 
-.pie {
-    background: rgb(255, 234, 141);
-    padding: 1%;
+.logo,
+.social {
     margin: 2%;
+    width: 20%;
+}
+
+.logo {
+    cursor: pointer;
+    transition: transform 1s, background-color 1s;
+}
+
+.logo:hover {
+    transform: scale(1.15);
+    background-color: deeppink;
+}
+
+.pie {
+    background-color: rgb(255, 234, 141);
+    padding: 1%;
+    margin: 2% auto;
+    width: 95%;
 }
 
 .publi {
-    background: rgb(255, 230, 0);
+    background-color: rgb(255, 230, 0);
     padding: 3%;
-    margin: 6%;
-}
-
-.banner {
-    background: rgb(247, 184, 47);
-    padding: 2%;
-    font-size: 30px;
-    font-weight: bold;
+    margin: 6% auto;
+    width: 85%;
 }
 
 .article {
-    background: rgb(78, 124, 223);
+    background-color: rgb(78, 124, 223);
     padding: 2%;
     margin: 3%;
     width: 50%;
 }
 
 .navegacion {
-    background: rgb(155, 184, 247);
+    background-color: rgb(155, 184, 247);
     padding: 2%;
     margin: 3%;
     width: 100%;
@@ -119,20 +138,22 @@ body {
     }
 
     .header,
-    .footer{
-        display: block;
+    .footer {
+        display: flex;
     }
 
-    .articlePubli{
-        display: inline-block;
+    .articlePubli {
+        display: flex;
+        flex-direction: column;
     }
 
     .boxBlueGrey {
-        display: block;
+        display: flex;
         padding: 1%;
     }
 
-    .logoSocial,
+    .logo,
+    .social,
     .nav {
         width: 94%;
     }
@@ -148,13 +169,23 @@ body {
         margin: 3%;
     }
 
+    .boxOrange {
+        width: 97%;
+    }
+
+    .banner {
+        padding: 1%;
+        margin: 3% auto;
+    }
+
     .publiContainer {
-        display: block;
+        display: flex;
     }
 
     .publi {
         margin-bottom: 0%;
         margin: 3%;
+        width: 88%;
     }
 
     .article,
@@ -173,10 +204,15 @@ body {
     }
 
     .boxBlueGrey {
-        display: block;
+        display: flex;
     }
 
-    .logoSocial,
+    .boxOrange {
+        width: 97%;
+    }
+
+    .logo,
+    .social,
     .nav {
         width: 94%;
     }
@@ -186,7 +222,7 @@ body {
     }
 
     .articlePubli {
-        display: inline-block;
+        display: flex;
     }
 
     .articleContainer,
@@ -194,27 +230,30 @@ body {
         width: 94%;
     }
 
-    .articleContainer{
-        display: block;
+    .articleContainer {
+        display: flex;
+        flex-direction: column;
     }
 
     .publi {
-        margin-bottom: 0%;
-        margin: 3%;
+        margin: 3% auto auto auto auto;
         width: 95%;
     }
 
     .boxGrey,
     .boxRed {
         width: 92%;
-        padding: 1%;
-        margin: 3%;
     }
 
     .article,
     .navegacion {
         margin: 2%;
         width: 98%;
+    }
+
+    .banner {
+        width: 93%;
+        padding: 1%;
     }
 
 }
